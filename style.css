@@ -1,0 +1,86 @@
+/* Reset default margins and set background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: radial-gradient(circle at center, #0a0a0a, #000000);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     min-height: 100vh; 
+}
+
+/* Title Styling */
+h1 {
+  margin-top: 15px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #00ff99;
+  text-shadow: 0 0 10px #00ff99, 0 0 20px #00cc77;
+}
+
+/* Score Display */
+#score {
+  font-size: 24px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 0 0 5px #ffcc00, 0 0 15px #ffaa00;
+}
+
+/* Game Canvas */
+canvas {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #00ff99;
+  border-radius: 8px;
+  background-color: #111;
+  box-shadow: 0 0 20px #00ff99, 0 0 40px #009966;
+}
+
+/* Countdown Text */
+#countdown {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ff3333;
+  text-shadow: 0 0 15px #ff3333, 0 0 30px #ff0000;
+  margin-top: 10px;
+}
+
+/* Restart Button */
+#restartBtn {
+  background: linear-gradient(90deg, #ff4757, #e84118);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#restartBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff6b81, 0 0 30px #e84118;
+}
+
+/* Funny Win Message */
+#winMessage {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffaa00, 0 0 20px #ff9900;
+  margin-top: 20px;
+}
+
+/* Hide video but keep mirrored for natural control */
+video {
+  display: none; /* Hide webcam feed */
+  transform: scaleX(-1); /* Mirror horizontally */
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Palm Pong 🏓</title>
+  <style>
+    #restartBtn {
+      display: none;
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #restartBtn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <video id="webcam" autoplay playsinline width="640" height="480"></video>
+  <audio id="aiWinSound" src="ai-win.mp3" preload="auto"></audio>
+  <canvas id="gameCanvas" width="640" height="480"></canvas>
+  <button id="restartBtn">Restart Game</button>
+
+  <!-- MediaPipe Hands -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+  <!-- Game Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
